@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#080f20">
+  <meta name="description" content="Nox Party — найди игроков и мастера для настольной ролевой игры во вселенной Warhammer.">
+  <title>Найти партию — Nox Party</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-page="search">
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header class="header"><a class="brand" href="index.html"><img src="assets/emblem.png" alt="" width="48" height="48"><span>NOX PARTY<small>СОБЕРИ СВОЮ ИСТОРИЮ</small></span></a><nav aria-label="Основная навигация"><a href="index.html" data-nav="search">Найти партию</a><a href="create.html" data-nav="create">Создать игру</a><a href="profile.html" data-nav="profile" id="profile-link">Вступить в клуб <span>↗</span></a></nav></header>
+<main id="main" tabindex="-1">
+<section id="search" class="screen">
+ <div class="hero"><div class="hero-copy"><p class="eyebrow">WARHAMMER • НАСТОЛЬНЫЕ РОЛЕВЫЕ ИГРЫ</p><h1>Мрачный мир.<br>Твоя <em>компания.</em></h1><p class="lead">Один бросок меняет историю. Найди игроков и мастера, с которыми захочется её пройти.</p><a class="button primary" href="#catalog">Найти своих <span>↓</span></a><div class="hero-notes"><span><i></i> Онлайн и за одним столом</span><span>Новичкам рады</span></div></div><div class="hero-art"><img src="assets/logo.png" alt="Nox Party: игральный куб с черепом и красными крыльями"><span class="art-caption">ТВОЁ ПРИКЛЮЧЕНИЕ НАЧИНАЕТСЯ С ПАРТИИ</span></div></div>
+ <div id="catalog" class="section-title"><div><p class="eyebrow">ДОСКА ПРИКЛЮЧЕНИЙ</p><h2>За столом есть место</h2></div><span class="muted">Демонстрационные объявления</span></div>
+ <div class="catalog-layout"><aside class="filters" aria-label="Фильтры партий"><div class="filter-heading"><h3>Твоя идеальная игра</h3><button class="text-button" id="reset-filters" type="button">Сбросить</button></div><label>Поиск<input id="query" type="search" placeholder="Название или город"></label><label>Вселенная<select id="setting"><option value="">Все вселенные</option><option>Warhammer 40,000</option><option>Warhammer Fantasy</option></select></label><label>Формат<select id="format"><option value="">Любой формат</option><option>Онлайн</option><option>За столом</option></select></label><label>Кого ищут<select id="role"><option value="">Игроков и мастера</option><option value="Игрок">Игроков</option><option value="Мастер">Мастера</option></select></label><label class="check"><input id="newbie" type="checkbox"> Только для новичков</label><div class="filter-tip"><span>✦</span><p>Не нашёл свою партию?<br><a href="create.html">Собери её сам →</a></p></div></aside><div class="results"><div class="results-heading"><p id="result-count" role="status"></p><span class="muted">Набор открыт</span></div><div id="cards" class="cards"></div><div id="empty" class="empty"><h3>Пока нет совпадений</h3><p>Попробуй другой формат или убери часть фильтров.</p><button class="button" id="empty-reset">Сбросить фильтры</button></div></div></div>
+ <div class="bottom-banner"><div><p class="eyebrow">ПО ТУ СТОРОНУ ШИРМЫ</p><h2>У тебя уже есть история?</h2><p>Найди тех, кто станет её героями. Создай объявление о своей игре.</p></div><a class="button primary" href="create.html">Собрать партию ↗</a></div>
+</section>
+</main>
+<footer><a class="brand footer-brand" href="index.html">NOX PARTY</a><p>Хорошая история начинается с хорошей компании.</p><span>Учебный проект · 2026<br>Неофициальный фанатский сервис</span></footer><div id="toast" role="status" class="toast" hidden></div>
+</body></html>

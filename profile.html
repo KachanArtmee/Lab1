@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#080f20">
+  <meta name="description" content="Nox Party — найди игроков и мастера для настольной ролевой игры во вселенной Warhammer.">
+  <title>Регистрация и профиль — Nox Party</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-page="profile">
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header class="header"><a class="brand" href="index.html"><img src="assets/emblem.png" alt="" width="48" height="48"><span>NOX PARTY<small>СОБЕРИ СВОЮ ИСТОРИЮ</small></span></a><nav aria-label="Основная навигация"><a href="index.html" data-nav="search">Найти партию</a><a href="create.html" data-nav="create">Создать игру</a><a href="profile.html" data-nav="profile" id="profile-link">Вступить в клуб <span>↗</span></a></nav></header>
+<main id="main" tabindex="-1">
+<section id="profile" class="screen"><div class="page-heading"><p class="eyebrow">01 / ТВОЙ ПУТЬ</p><h1 id="profile-title">Добро пожаловать<br>в партию</h1><p class="lead">Расскажи немного о себе — так проще найти общий язык за столом.</p></div><div class="form-layout"><form id="profile-form" class="panel"><h2>Профиль участника</h2><p class="muted">Учебная регистрация. Данные остаются в этом браузере.</p><div class="two-fields"><label>Позывной<input name="nickname" required minlength="2" maxlength="30" autocomplete="nickname" placeholder="Например, Raven"></label><label>Email<input name="email" required type="email" autocomplete="email" placeholder="you@example.com"></label></div><div class="two-fields"><label>Твоя роль<select name="role"><option>Игрок</option><option>Мастер</option><option>Игрок и мастер</option></select></label><label>Опыт<select name="experience"><option>Моя первая игра</option><option>Несколько приключений</option><option>Опытный участник</option></select></label></div><fieldset><legend>Какая фракция тебе ближе?</legend><p class="muted">Для знакомства с твоими интересами. Персонажа согласуете с мастером.</p><div class="factions"><label><input type="radio" name="faction" value="Империум" checked><span>♜<b>Империум</b><small>Долг и вера</small></span></label><label><input type="radio" name="faction" value="Эльдары"><span>✧<b>Эльдары</b><small>Древнее наследие</small></span></label><label><input type="radio" name="faction" value="Орки"><span>⚒<b>Орки</b><small>Сила и азарт</small></span></label><label><input type="radio" name="faction" value="Хаос"><span>✶<b>Хаос</b><small>За гранью порядка</small></span></label><label><input type="radio" name="faction" value="Некроны"><span>◇<b>Некроны</b><small>Вечность впереди</small></span></label><label><input type="radio" name="faction" value="Тау"><span>◎<b>Тау</b><small>Высшее благо</small></span></label></div></fieldset><button class="button primary" type="submit">Сохранить профиль →</button><p class="form-note">Без пароля и отправки данных на сервер. Это демонстрация интерфейса регистрации.</p><button id="delete-profile" type="button" class="text-button" hidden>Удалить локальный профиль</button></form><aside class="profile-aside"><img src="assets/emblem.png" alt="Эмблема Nox Party"><p class="eyebrow">У КАЖДОГО ГЕРОЯ ЕСТЬ ПРЕДЫСТОРИЯ</p><h2>Твоя начинается здесь.</h2><p>Выбирай вселенную, знакомься с партией и договаривайся о первой сессии.</p><div class="steps"><p><b>01</b> Создай профиль</p><p><b>02</b> Найди игру по душе</p><p><b>03</b> Оставь заявку мастеру</p></div></aside></div></section>
+</main>
+<footer><a class="brand footer-brand" href="index.html">NOX PARTY</a><p>Хорошая история начинается с хорошей компании.</p><span>Учебный проект · 2026<br>Неофициальный фанатский сервис</span></footer><div id="toast" role="status" class="toast" hidden></div>
+</body></html>

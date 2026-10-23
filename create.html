@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#080f20">
+  <meta name="description" content="Nox Party — найди игроков и мастера для настольной ролевой игры во вселенной Warhammer.">
+  <title>Создать игру — Nox Party</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-page="create">
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header class="header"><a class="brand" href="index.html"><img src="assets/emblem.png" alt="" width="48" height="48"><span>NOX PARTY<small>СОБЕРИ СВОЮ ИСТОРИЮ</small></span></a><nav aria-label="Основная навигация"><a href="index.html" data-nav="search">Найти партию</a><a href="create.html" data-nav="create">Создать игру</a><a href="profile.html" data-nav="profile" id="profile-link">Вступить в клуб <span>↗</span></a></nav></header>
+<main id="main" tabindex="-1">
+<section id="create" class="screen"><div class="page-heading"><p class="eyebrow">НОВАЯ ИСТОРИЯ</p><h1>Собери свою партию</h1><p class="lead">Расскажи, во что играете и кого ждёте за столом.</p></div><form id="create-form" class="panel create-panel"><h2>Об игре</h2><label>Название приключения<input name="title" required minlength="4" maxlength="70" placeholder="Например, Шёпот забытого мира"></label><div class="two-fields"><label>Вселенная<select name="setting"><option>Warhammer 40,000</option><option>Warhammer Fantasy</option></select></label><label>Формат<select name="format" id="create-format"><option>Онлайн</option><option>За столом</option></select></label></div><label id="place-label">Платформа или место<input name="place" required maxlength="70" placeholder="Discord / клуб и город"></label><div class="two-fields"><label>Кого ищете<select name="role"><option>Игрок</option><option>Мастер</option></select></label><label>Свободных мест<input name="seats" required type="number" min="1" max="12" value="4"></label></div><div class="two-fields"><label>Дата первой встречи<input name="date" required type="date"></label><label>Время (Минск, UTC+3)<input name="time" required type="time" value="19:00"></label></div><label>О приключении<textarea name="description" required minlength="20" maxlength="1000" rows="5" placeholder="Завязка, настроение игры, ожидания от участников…"></textarea></label><label class="check"><input type="checkbox" name="newbie" checked> Готовы помочь новичкам</label><p class="form-note">Объявление сохранится только в этом браузере. Другие пользователи его не увидят.</p><button class="button primary" type="submit">Создать объявление ↗</button></form></section>
+</main>
+<footer><a class="brand footer-brand" href="index.html">NOX PARTY</a><p>Хорошая история начинается с хорошей компании.</p><span>Учебный проект · 2026<br>Неофициальный фанатский сервис</span></footer><div id="toast" role="status" class="toast" hidden></div>
+</body></html>
